@@ -1,8 +1,8 @@
-# SyncMyTracks
+# NRCToStrava
 
 Migrate your **Nike Run Club** activity history to **Strava** — before Nike shuts it down for good.
 
-SyncMyTracks downloads all your NRC runs via Nike's API, converts them to GPX files, and uploads them to Strava with full GPS tracks, elevation, and heart rate data preserved.
+NRCToStrava downloads all your NRC runs via Nike's API, converts them to GPX files, and uploads them to Strava with full GPS tracks, elevation, and heart rate data preserved.
 
 ## How It Works
 
@@ -29,8 +29,8 @@ Activities without GPS data (treadmill/manual entries) are automatically skipped
 ### 1. Clone and install
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/SyncMyTracks.git
-cd SyncMyTracks
+git clone https://github.com/aryashashank/NRCToStrava.git
+cd NRCToStrava
 pip install -r requirements.txt
 ```
 
@@ -50,7 +50,7 @@ pip install -r requirements.txt
 
 1. Go to [strava.com/settings/api](https://www.strava.com/settings/api)
 2. Fill in the form:
-   - **Application Name**: anything (e.g. `SyncMyTracks`)
+   - **Application Name**: anything (e.g. `NRCToStrava`)
    - **Category**: choose any
    - **Website**: `http://localhost`
    - **Authorization Callback Domain**: `localhost`
@@ -119,7 +119,7 @@ Each step is **resumable** — if interrupted, re-running the same command skips
 ## Project Structure
 
 ```
-SyncMyTracks/
+NRCToStrava/
 ├── main.py              # CLI entry point
 ├── nrc_client.py        # Nike Run Club API client
 ├── gpx_converter.py     # NRC JSON → GPX converter
@@ -146,4 +146,3 @@ SyncMyTracks/
 ## License
 
 MIT
-
