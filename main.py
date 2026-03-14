@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""SyncMyTracks — migrate Nike Run Club activities to Strava.
+"""NRCToStrava — migrate Nike Run Club activities to Strava.
 
 Usage:
     python main.py              # run full pipeline: fetch → convert → upload
@@ -45,7 +45,7 @@ def step_upload():
 def main():
     print()
     print("╔══════════════════════════════════════════════════════════╗")
-    print("║            SyncMyTracks — NRC → Strava                  ║")
+    print("║            NRCToStrava — NRC → Strava                    ║")
     print("╚══════════════════════════════════════════════════════════╝")
     print()
 

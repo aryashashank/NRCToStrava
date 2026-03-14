@@ -50,7 +50,7 @@ def _build_gpx_xml(activity: dict) -> str | None:
     # GPX root
     gpx = Element("gpx")
     gpx.set("version", "1.1")
-    gpx.set("creator", "SyncMyTracks - NRC to Strava")
+    gpx.set("creator", "NRCToStrava - NRC to Strava")
     gpx.set("xmlns", "http://www.topografix.com/GPX/1/1")
     gpx.set("xmlns:gpxtpx", "http://www.garmin.com/xmlschemas/TrackPointExtension/v1")
 
